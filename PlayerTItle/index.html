@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>称号插件 | ZmCarft</title><meta name="keywords" content="Zmcarft - 我的世界服务器1.18.1"><meta name="author" content="影."><meta name="copyright" content="影."><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="玩家指令&#x2F;plt shop    打开称号商城gui&#x2F;plt open    打开称号仓库gui op指令 （玩家无权限操作）&#x2F;plt addcoin [玩家名称] [金额]    给玩家添加称号币&#x2F;plt add [称号类型] [称号名称] [金额] (天数) (是否隐藏) (玩家名)    添加一个新称号到称号商城&#x2F;plt addpermission [称号名称] [需要权限]    添加一个">
+<meta property="og:type" content="website">
+<meta property="og:title" content="称号插件">
+<meta property="og:url" content="http://shadows1102.github.io.git/PlayerTItle/index.html">
+<meta property="og:site_name" content="ZmCarft">
+<meta property="og:description" content="玩家指令&#x2F;plt shop    打开称号商城gui&#x2F;plt open    打开称号仓库gui op指令 （玩家无权限操作）&#x2F;plt addcoin [玩家名称] [金额]    给玩家添加称号币&#x2F;plt add [称号类型] [称号名称] [金额] (天数) (是否隐藏) (玩家名)    添加一个新称号到称号商城&#x2F;plt addpermission [称号名称] [需要权限]    添加一个">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://shadows1102.github.io.git/media/top_img.jpg">
+<meta property="article:published_time" content="2022-04-03T10:11:03.000Z">
+<meta property="article:modified_time" content="2022-04-03T10:22:03.829Z">
+<meta property="article:author" content="影.">
+<meta property="article:tag" content="Zmcarft - 我的世界服务器1.18.1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://shadows1102.github.io.git/media/top_img.jpg"><link rel="shortcut icon" href="/media/favicon.png"><link rel="canonical" href="http://shadows1102.github.io.git/PlayerTItle/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '称号插件',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: false,
+  postUpdate: '2022-04-03 18:22:03'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 插件</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Xconomy/"><i class="fa-fw fas fa-archive"></i><span> 金币插件</span></a></li><li><a class="site-page child" href="/PlayerPrints/"><i class="fa-fw fas fa-tags"></i><span> 点券插件</span></a></li><li><a class="site-page child" href="/PlayerTItle/"><i class="fa-fw fas fa-folder-open"></i><span> 称号插件</span></a></li><li><a class="site-page child" href="/SkinsRestorer/"><i class="fa-fw fas fa-child"></i><span> 皮肤插件</span></a></li><li><a class="site-page child" href="/VIP/"><i class="fa-fw fa fa-jpy"></i><span> 会员插件</span></a></li><li><a class="site-page child" href="/Authme/"><i class="fa-fw fa fa-building"></i><span> 登录插件</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> OP插件</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Group/"><span> 权限插件(玩家勿入)</span></a></li><li><a class="site-page child" href="/PlugManX/"><span> 插件管理(玩家勿入)</span></a></li><li><a class="site-page child" href="/worldedit/"><span> 创世神插件(玩家勿入)</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/zanzhu/"><i class="fa-fw fa fa-jpy"></i><span> 赞助我们</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/media/top_img.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ZmCarft</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 插件</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Xconomy/"><i class="fa-fw fas fa-archive"></i><span> 金币插件</span></a></li><li><a class="site-page child" href="/PlayerPrints/"><i class="fa-fw fas fa-tags"></i><span> 点券插件</span></a></li><li><a class="site-page child" href="/PlayerTItle/"><i class="fa-fw fas fa-folder-open"></i><span> 称号插件</span></a></li><li><a class="site-page child" href="/SkinsRestorer/"><i class="fa-fw fas fa-child"></i><span> 皮肤插件</span></a></li><li><a class="site-page child" href="/VIP/"><i class="fa-fw fa fa-jpy"></i><span> 会员插件</span></a></li><li><a class="site-page child" href="/Authme/"><i class="fa-fw fa fa-building"></i><span> 登录插件</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> OP插件</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Group/"><span> 权限插件(玩家勿入)</span></a></li><li><a class="site-page child" href="/PlugManX/"><span> 插件管理(玩家勿入)</span></a></li><li><a class="site-page child" href="/worldedit/"><span> 创世神插件(玩家勿入)</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/zanzhu/"><i class="fa-fw fa fa-jpy"></i><span> 赞助我们</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">称号插件</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><h2 id="玩家指令"><a href="#玩家指令" class="headerlink" title="玩家指令"></a>玩家指令</h2><p>/plt shop    打开称号商城gui<br>/plt open    打开称号仓库gui</p>
+<h2 id="op指令-（玩家无权限操作）"><a href="#op指令-（玩家无权限操作）" class="headerlink" title="op指令 （玩家无权限操作）"></a>op指令 （玩家无权限操作）</h2><p>/plt addcoin [玩家名称] [金额]    给玩家添加称号币<br>/plt add [称号类型] [称号名称] [金额] (天数) (是否隐藏) (玩家名)    添加一个新称号到称号商城<br>/plt addpermission [称号名称] [需要权限]    添加一个权限称号<br>/plt addPlayerTitle [玩家名称] [称号名称] (天数)    直接新增一个隐藏的称号,并把这个称号给对应玩家,天数如果不填默认永久<br>/plt addreward [称号数量] [类型] [金额]    给对应数量的称号添加奖励<br>/plt changeitem [称号id] [天数] [数量] (玩家名称)    将对应id的称号转换成右键可使用的物品<br>/plt randomcard [天数] (类型)    获取一个随机称号卡<br>/plt reload    重载插件<br>/plt set [玩家名称] [称号ID] [天数]    给玩家设置对应天数的称号<br>/plt settitlebuff [称号id] [类型] [属性标签]    给称号添加buff属性<br>/plt subtractcoin [玩家名称] [金额]    给玩家减少称号币<br>/plt view [类型] (玩家名)    查看对应gui并管理类型: shop; open; reward<br>/plt shop    打开称号商城gui<br>/plt open    打开称号仓库gui<br>/plt getId    查看服务器ip<br>/plt setTitleParticle [称号id] [粒子类型] [粒子id] (颜色) (颜色) (颜色)    给称号添加粒子效果<br>/plt removeTitleParticle [称号id]    删除称号粒子效果<br>/plt setDescription [称号id] [称号描述]    给称号添加描述<br>/plt listTitle [页数]    查询服务器称号列表<br>/plt adminShop    打开管理称号商城gui(修改或者删除称号用)<br>/plt delBuff [buffid]    删除对应buffid的buff效果<br>/plt convert [类型]    转换数据源，类型mysql或者sqlite<br>/plt custom [称号名称]    设置自定义称号gui<br>/plt setCustom [玩家名称] [可自定义次数]    设置玩家可以自定义的次数<br>/plt del [id]    指令删除称号，同时会删除玩家拥有的该称号</p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><p>%playerTitle_use%    玩家使用的称号<br>%playerTitle_number%    玩家称号数量<br>%playerTitle_coin%    玩家称号币变量<br>%playerTitle_description%    玩家使用的称号的描述<br>%playerTitle_buff%    玩家使用的称号的buff,多个自动,会分隔<br>%playerTitle_particle%    玩家使用的称号的粒子效果</p>
+<h2 id="rgb特效"><a href="#rgb特效" class="headerlink" title="rgb特效"></a>rgb特效</h2><h3 id="第一步-color-yml配置"><a href="#第一步-color-yml配置" class="headerlink" title="第一步 color.yml配置"></a>第一步 color.yml配置</h3><p>1: ‘FF0000’<br>2: ‘FF0033’<br>3: ‘FF0066’<br>4: ‘FF0099’<br>5: ‘FF00B4’<br>6: ‘FF00CC’<br>7: ‘FF00FF’</p>
+<h3 id="第二步-新增插件指令"><a href="#第二步-新增插件指令" class="headerlink" title="第二步 新增插件指令:"></a>第二步 新增插件指令:</h3><p>/plt add activity %1%穿%2%越%3%星%4%空%5%的%6%祈%7%愿 0 0</p>
+<h2 id="称号卡"><a href="#称号卡" class="headerlink" title="称号卡"></a>称号卡</h2><h3 id="普通称号卡"><a href="#普通称号卡" class="headerlink" title="普通称号卡"></a>普通称号卡</h3><p>/plt listTitle 0 查看现有称号id 或者 /plt shop里查看称号id</p>
+<p>/plt changeItem [称号id] [天数] [数量]</p>
+<h3 id="随机称号卡"><a href="#随机称号卡" class="headerlink" title="随机称号卡"></a>随机称号卡</h3><p>/plt randomCard [天数] (类型)<br>例如: /plt randomCard 0 可获取的一个永久使用的随机称号</p>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">影.</div><div class="author-info__description">腐竹qq：576046454</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://qm.qq.com/cgi-bin/qm/qr?k=oPFjP95d9-Ga4mpWGNoNGX2S3UXLFdnS&amp;authKey=0/wnW9hW6ZazOUQVz/+T87ZlY3i/xIp0YkDjco4Hos4vB3ho4jbTvXWyCeb+JKah&amp;noverify=0#"><i class="fab fa-github"></i><span>添加官方交流群</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:b576046454@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">ZmCarft服务器1.18.1新服开荒</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/done/" title="测试页面"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/media/top_img.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="测试页面"/></a><div class="content"><a class="title" href="/blog/done/" title="测试页面">测试页面</a><time datetime="2021-09-16T11:43:06.000Z" title="发表于 2021-09-16 19:43:06">2021-09-16</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/09/"><span class="card-archive-list-date">九月 2021</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-09-09T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">70</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-04-08T10:39:17.518Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 影.</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script></div><div class="aplayer no-destroy" data-id="7675104902" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/wanko.model.json"},"display":{"position":"left","width":100,"height":150,"hOffset":-10,"vOffset":40},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>
